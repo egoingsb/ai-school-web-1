@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <h1>javascript</h1>
+       <script>
+        document.write(1+1);
+       </script> 
+        <h1>html</h1>
+        1+1
+        <h1>시간</h1>
+        2023-06-30 21:00:10
+        <h1>js의 시간</h1>
+        <script>
+            let currentDateTime = new Date();
+            let formattedDateTime = currentDateTime.getFullYear() + "-" +
+                                    ("0" + (currentDateTime.getMonth()+1)).slice(-2) + "-" +
+                                    ("0" + currentDateTime.getDate()).slice(-2) + " " + 
+                                    ("0" + currentDateTime.getHours()).slice(-2) + ":" + 
+                                    ("0" + currentDateTime.getMinutes()).slice(-2) + ":" + 
+                                    ("0" + currentDateTime.getSeconds()).slice(-2);
+            document.write(formattedDateTime);
+        </script>
+    </body>
+</html>
