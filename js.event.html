@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <input type="button" value="hi" onclick="alert('hi')">
+        <input type="text" onchange="validateEmail(this)">
+        <script>
+        function validateEmail(input) {
+            const emailPattern = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+            if (!emailPattern.test(input.value)) {
+                alert("형식이 틀렸습니다. 다시 입력해주세요.");
+                input.value = '';
+            } else {
+                alert("잘했어요!");
+            }
+        }
+        </script>
+    </body>
+</html>
