@@ -36,10 +36,18 @@
             bodyTag.style.backgroundColor='black';
             bodyTag.style.color='white';
             this.value = '주간';
+            const as = document.querySelectorAll('a');
+            for(let i=0; i<as.length; i++){
+                as[i].style.color = 'white';
+            }
         } else {
             bodyTag.style.backgroundColor='white';
             bodyTag.style.color='black';
             this.value = '야간';
+            const as = document.querySelectorAll('a');
+            for(let i=0; i<as.length; i=i+1){
+                as[i].style.color = 'black';
+            }
         }
     ">
     <h1><a href="index.html">WEB</a></h1>
