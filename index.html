@@ -31,13 +31,16 @@
     <script>
         const bodyTag = document.querySelector('body');
     </script>
-    <input type="button" value="black" onclick="
-        bodyTag.style.backgroundColor='black';
-        bodyTag.style.color='white';
-    ">
-    <input type="button" value="white" onclick="
-        bodyTag.style.backgroundColor='white';
-        bodyTag.style.color='black';
+    <input type="button" value="야간" onclick="
+        if(this.value === '야간') {
+            bodyTag.style.backgroundColor='black';
+            bodyTag.style.color='white';
+            this.value = '주간';
+        } else {
+            bodyTag.style.backgroundColor='white';
+            bodyTag.style.color='black';
+            this.value = '야간';
+        }
     ">
     <h1><a href="index.html">WEB</a></h1>
     <div id="container">
