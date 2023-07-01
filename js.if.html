@@ -1,0 +1,68 @@
+<html>
+    <body>
+        <h1>조건문 - Conditional Statement</h1>
+        <script>
+            console.log(1);
+            if(true){
+                console.log(2);
+            }
+            console.log(3);
+
+            console.log(1);
+            if(false){
+                console.log(2);
+            }
+            console.log(3);
+        </script>
+
+        <script>
+            console.log(1);
+            if(true){
+                console.log(2.1);
+            }
+            if(false){
+                console.log(2.2);
+            }
+            console.log(3);
+
+
+            console.log(1);
+            if(false){
+                console.log(2.1);
+            } else {
+                console.log(2.2);
+            }
+            console.log(3);
+        </script>
+
+
+        <script>
+            console.log(1);
+            if(false){
+                console.log(2.1);
+            } else if(true) {
+                console.log(2.2);
+            } else {
+                console.log(2.3);
+            }
+            console.log(3);
+        </script>
+
+        <h1>로그인 기능</h1>
+        <script>
+            // 사용자에게 비밀번호를 prompt로 물어본다. 
+            // 만약 사용자가 입력한 비번이 1111과 같다면 
+                // 어서오십시오! 환영합니다. 😊😂🤣
+            let inputPwd = prompt('비밀번호를 알려주세요!');
+            let pwd1 = '1111';
+            let pwd2 = '2222';
+            if(inputPwd === pwd1){
+                document.write('어서오세요. 1번 비번으로 로그인!')
+            } else if(inputPwd === pwd2){
+                document.write('어서오세요. 2번 비번으로 로그인!')
+            } else {
+                document.write('뉘슈?');
+            }
+        </script>
+    </body>
+</html>
